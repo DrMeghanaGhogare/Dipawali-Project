@@ -1,0 +1,22 @@
+Studied the following technologies
+
+GitHub Project on Summarize API: "Video Transcript Summarization Using AI Models". Retrieved from GitHub.
+Arxiv Survey on Video Summarization with Deep Neural Networks. Retrieved from ArXiv.
+Google Speech API Documentation, 2023.
+OpenAI Whisper Model for Multimodal Speech-to-Text Processing, 2023.
+
+
+ Comparing Key Technologies
+Technology	Capabilities	Limitations
+Whisper AI (OpenAI)	High accuracy speech-to-text with timestamping	Limited multilingual support; heavy computing requirements
+Google Speech API	Fast transcription with API integration	Lacks contextual summarization features
+Google Gemini Pro	Multimodal LLM handling both text and video	Newer; scalability in production unknown
+YouTube Captions & ASR	Pre-generated transcripts	Lacks summarization; accuracy varies across languages
+Summarize API (Groq)	Summarizes from multiple sources including YouTube	Dependent on video quality for effective summarization
+
+
+
+Why i sthe Project Important: Though technologies like Gemini Pro and Whisper have improved both transcription and summarization, several challenges persist.
+Current models struggle with accurately detecting speaker intent, managing noisy audio inputs, and adapting to multiple languages. Additionally,
+the lack of real-time summarization capabilities limits their utility in scenarios requiring instant feedback.
+
