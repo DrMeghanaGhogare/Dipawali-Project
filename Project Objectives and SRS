@@ -1,0 +1,15 @@
+Start -> Input Video -> Extract Audio and Visual Frames -> Audio Transcription (Gemini Pro) -> Visual Analysis -> Textual Analysis -> Multimodal Fusion -> Summarization (Gemini Pro) -> Output: Transcribed Text and Summary -> End
+
+
+
+Project Proposal and Objectives
+Purpose: Define the goals, including how Google Gemini Pro will be integrated.
+Scope: Outline the features—transcription, summarization, and any other enhancements like keyword extraction or sentiment analysis.
+Business Value: Describe the relevance, including potential use cases like quick video insights, accessibility improvements, and educational resource optimization.
+
+
+
+ System Requirements Specification (SRS)
+Functional Requirements: Define how the system will accept YouTube URLs, process transcription, generate summaries, and store results.
+Non-Functional Requirements: Define performance expectations, such as response time, accuracy benchmarks, or scalability with high video load.
+User Interface Requirements: Outline any frontend requirements if you’re planning to create an interface.
