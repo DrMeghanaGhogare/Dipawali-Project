@@ -1,0 +1,27 @@
+import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv() ##load all the nevironment variables
+import os
+import google.generativeai as genai
+
+from youtube_transcript_api import YouTubeTranscriptApi
+
+#  configures the genai library with an API key.
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+# a multi-line string that provides instructions.
+prompt="""You are Yotube video summarizer. You will be taking the transcript text
+and summarizing the entire video and providing the important summary in points
+within 250 words. Please provide the summary of the text given here:  """
+
+
+## getting the transcript data from yt videos
+#This extracts the video ID from the YouTube URL.
+def extract_transcript_details(youtube_video_url):
+    try:
+        video_id=youtube_video_url.split("=")[1]
+        
+        transcript_text=YouTubeTranscriptApi.get_transcript(video_id)
+
+       
